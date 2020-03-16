@@ -1,7 +1,8 @@
 const path = require('path');
 
 [
-  'network'
+  'common',
+  'network',
 ].forEach(name => {
-  exports[name] = require(path.join(__dirname, name));
+  Object.assign(exports , require(path.join(__dirname, name)));
 })

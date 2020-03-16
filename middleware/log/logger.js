@@ -27,7 +27,7 @@ const baseInfo = {
   dir: 'logs',
   env: 'dev',
   projectName: 'koa2-project',
-  serverIp: utils.network.getIPAdress()
+  serverIp: utils.getIPAdress()
 }
 
 module.exports = (options = {}) => {
